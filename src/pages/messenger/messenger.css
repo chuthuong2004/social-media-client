@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+.messenger {
+    height: calc(100vh - 50px);
+    display: flex;
+    background-color: #fff;
+}
+
+.chatMenu {
+    flex:3.5;
+}
+.chatBox {
+    flex:5.5;
+}
+.chatBoxBottom {
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.chatOnline {
+    flex: 3;
+}
+.chatMenuWrapper, .chatBoxWrapper, .chatOnlineWrapper {
+    padding: 10px;
+    height: 100%;
+}
+.chatBoxWrapper{
+    display: flex;flex-direction: column;
+    justify-content: space-between;
+}
+.chatBoxTop {
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+.chatMenuTitle{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.chatMenuTitle > h1 {
+    font-size: 24px;
+    font-size: 700;
+}
+.chatMenuIcons{
+    display: flex;
+    align-items: center;
+}
+.chatMenuIcon {
+    background-color:rgb(209, 201, 201);
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chatMenuInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.12);
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.chatInput{
+    display: flex;
+    align-items: center;
+    flex:1;
+    position: relative;
+}
+.emojiIcon{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.chatBoxBottomIcon{
+    margin-right: 5px;
+    color: #1877f2;
+    cursor: pointer;
+}
+
+.chatMessageInput {
+    border-radius: 20px;
+    border: none;
+     outline: none;
+    flex: 1;
+    background-color: rgb(221, 214, 214);
+    padding: 10px 25px 10px 10px ;
+}
+.chatSubmitBtn {
+    margin-left: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius:50%;
+    color: #1877f2;
+    cursor: pointer;
+    background-color: transparent;
+}
+.chatSubmitBtn:hover {
+    background-color: rgb(241, 236, 236);
+    transition: background-color 0.2s ease-in-out;
+}
+.conversations {
+    height: calc(100vh - 165px);
+    overflow-y: scroll;
+}
+
+/* thông tin tiêu đề người nhận */
+.chatBoxTitle {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 12px 25px -7px rgba(153,152,148,0.49); 
+box-shadow: 0px 12px 25px -7px rgba(153,152,148,0.49);
+}
+.chatBoxTitleInfo {
+    display: flex;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.chatBoxTitleInfo:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(240, 238, 238);
+}
+.titleInfoChatBox {
+    margin-left: 5px;
+}
+.titleInfoChatBox{
+    display: flex;
+    flex-direction: column;
+}
+.userChatBox{
+    font-weight: 600;
+    font-size: 18px;
+}
+.activeText{
+    font-size: 12px;
+}
+.dotOnline {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: green;
+}
+.dotOnline.logged {
+    background-color: rgb(179, 173, 173);
+}
+.titleInfoImg {
+    position: relative;
+}
+.chatBoxInfoImg{
+    width: 40px;height: 40px;object-fit: cover;
+    border-radius: 50%;
+}
+.chatBoxOptions {
+    display: flex;
+    align-items: center;
+}
+.chatBoxOptionIcon {
+    color: #1877f2;
+    margin-left: 10px;
+    border-radius:50%;
+    padding: 1px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.chatBoxOptionIcon:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(241, 234, 234);
+}
+.noConversationText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    cursor: default;
+    color: rgb(141, 133, 133);
+}

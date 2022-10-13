@@ -1,0 +1,78 @@
+.conversation{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius:8px;
+    cursor: pointer;
+}
+.conversation:hover {
+    background-color: rgb(226, 219, 219);
+    transition: background-color 0.2s ease-in-out;
+}
+.conversationImg {
+    width: 60px;
+    height: 60px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-right: 10px;
+}
+.contentMessage{
+    display: flex;
+    flex-direction: column;
+}
+.username{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.arrivalMessage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.latestMessage{
+    font-size: 14px;
+    line-height: 18px;
+    height: 19px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+}
+.messageTime {
+    margin-left: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.dotCenter{
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    margin: 2px;
+    background-color: black;
+    
+}
+
+.conversation.notSee .arrivalMessage {
+    font-weight: bold;
+}
+.imgContainer {
+    position: relative;
+}
+.dotOnlineConversation {
+    position: absolute;
+    right: 15px;
+    bottom: 2px;
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius:50%;
+    border: 2px solid #fff;
+}
+.dotOnlineConversation.logged {
+    background-color: rgb(179, 173, 173);
+}

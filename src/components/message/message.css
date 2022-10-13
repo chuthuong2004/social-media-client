@@ -1,0 +1,87 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.message.own {
+    align-items: flex-end;
+}
+.messageTop {
+    display: flex;
+    align-items: flex-end;
+    
+}
+.messageImg{
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius:50%;
+    margin-right: 10px;
+}
+.messageText {
+    padding: 10px;
+    border-radius:20px;
+    background-color: rgb(224, 218, 218);
+    color: black;
+    max-width: 300px;
+}
+.message.own .messageText {
+    
+    background-color: #1877f2;
+    color: #fff;
+
+}
+.messageBottom {
+    font-size: 12px;
+    margin-top: 10px;
+}
+.messageImgContainer{
+    position: relative;
+}
+.dotOnlineMessage {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    bottom: 0px;
+    right: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: green;
+}
+.dotOnlineMessage.logged {
+    background-color: rgb(179, 173, 173);
+}
+
+
+/* loading */
+.loading {
+    display: flex;
+    align-items: center;
+}
+.loading span {
+    width: 7px;
+    height: 7px;
+    margin: 0 2px;
+    background-color: rgb(119, 114, 114);
+    border-radius:50%;
+    display: inline-block;
+    animation-name: dots;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+.loading span:nth-child(2) {
+    background-color: rgb(119, 114, 114);
+    animation-delay: 0.2s;
+}
+.loading span:nth-child(3) {
+    background-color: rgb(119, 114, 114);
+    animation-delay: 0.4s;
+}
+@keyframes dots {
+    50% {
+        opacity: 0;
+        transform: scale(0.7) translateY(10px);
+    }
+}

@@ -1,0 +1,154 @@
+.rightbar {
+    flex: 3.5;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 179, 179);
+}
+
+.rightbarWrapper {
+    padding: 20px 20px 0 0;
+}
+
+.birthdayTitle,
+.rightbarTitle {
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(134, 128, 128);
+}
+
+.birthdayContainer {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.birthdayContainer:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.birthdayImg {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+.birthdayText {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.lineHr {
+    border-top: 1px solid #ccc;
+    height: 1px;
+    margin: 10px 10px 0;
+}
+
+.rightbarOnline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightbarOnlineIcons {
+    display: flex;
+    align-items: center;
+}
+
+.rightbarOnlineIcon {
+    margin-left: 5px;
+    color: rgb(121, 116, 116);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.rightbarOnlineIcon:hover {
+    background-color: rgb(238, 235, 235);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.rightbarFriendList {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.rightbarTitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.rightbarInfo {
+    margin-bottom: 30px;
+}
+
+.rightbarInfoItem {
+    margin-bottom: 10px;
+}
+
+.rightbarKey {
+    font-weight: 500;
+    margin-right: 15px;
+    color: #555;
+}
+
+.rightbarInfoValue {
+    font-weight: 300;
+}
+
+.rightbarFollowings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rightbarFollowing {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.rightbarFollowingImg {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.rightbarFollowingName{
+    text-align: center;
+    color: black;
+}
+.btnFollow {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius:5px;
+    cursor: pointer;
+    border: none;
+    background-color: #1872f2;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+}

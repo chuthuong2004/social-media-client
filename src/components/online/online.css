@@ -1,0 +1,41 @@
+.rightbarFriend {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.rightbarFriend:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.rightbarProfileContainer {
+    position: relative;
+}
+
+.rightbarFriendImg {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.dotOnline {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: green;
+}
+
+.rightbarFriendName {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
